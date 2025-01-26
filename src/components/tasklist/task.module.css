@@ -1,0 +1,85 @@
+.complete {
+  background-color: white;
+  width: 22%;
+  height: 90%;
+  background-color: green;
+  border-radius: 10px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.complete:hover {
+  scale: 1.02;
+}
+.fail {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 22%;
+  height: 90%;
+  background-color: rgb(19, 100, 155);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.fail:hover {
+  scale: 1.02;
+}
+.newTask {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+
+  width: 22%;
+  height: 90%;
+  background-color: rgb(12, 87, 63);
+  /* border: 1.5px solid rgb(31, 141, 139); */
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.newTask:hover {
+  scale: 1.02;
+}
+.task {
+  position: relative;
+  left: 10%;
+  width: 100%;
+  font-size: x-large;
+  color: white;
+  font-weight: bold;
+}
+.taskName {
+  position: relative;
+  left: 10%;
+
+  color: white;
+  font-size: large;
+  width: 100%;
+  /* border: 1px solid black; */
+  width: 50%;
+  display: flex;
+  font-weight: bolder;
+  flex-direction: row;
+}
+
+
+@media (max-width:650px) and (min-width:0px) {
+  .complete{
+   width: 40%;
+   height: 40%;
+
+  }
+  .fail{
+    width: 40%;
+    height: 40%;
+  }
+  .newTask{
+    width: 40%;
+    height: 40%;
+  }
+  
+}

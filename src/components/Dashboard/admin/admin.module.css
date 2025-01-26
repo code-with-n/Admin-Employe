@@ -1,0 +1,148 @@
+.admin{
+    width: 100vw;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* createTaskBox */
+.createTaskBox{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+/* inputes css */
+
+.inputes{
+    position: relative;
+    left: 8%;
+    width: 20%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.taskTitleInput{
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.taskTitleInput input{
+    border: 1px solid rgb(190, 190, 190);
+
+}
+.dateAdd{
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.dateAdd input{
+    border: 1px solid rgb(190, 190, 190);
+}
+.assignTo{
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.assignTo input{
+    border: 1px solid rgb(190, 190, 190);
+
+}
+.category{
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.category input{
+    border: 1px solid rgb(190, 190, 190);
+
+}
+    /* discription box css */
+.discripBox{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.discripBox textarea{
+    border: 1px solid rgb(190, 190, 190);
+
+}
+
+.createtask{
+    margin: 10px auto;
+    width: 25%;
+    height: 12%;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+
+/* table css */
+.table{
+    width: 98%;
+    height: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: rgb(34, 43, 97);
+    align-items: center;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+.tableDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    padding: 0px 12px;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+/* worktable */
+.worktable{
+    /* gap: 10px; */
+    margin-top: 10px;
+    width: 98%;
+    height: 50px;
+    border: 1px solid rgb(156, 155, 155);
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    overflow: hidden;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+}
+.wrktableDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    padding: 0px 12px;
+    color: black;
+}
+@media (max-width:650px) and (min-width:0px) {
+   .inputes{
+    position: relative;
+    left: 1%;
+    width: 55%;
+   }
+   .createtask{
+    width: 80%;
+    /* border: 1px solid black; */
+    /* background-color: red; */
+   }
+}
