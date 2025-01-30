@@ -7,7 +7,7 @@ const Admin = ({changeUser}) => {
   const { authData } = useContext(AuthContext);
   // console.log(employes)
   // console.log(data)
-  
+  console.log(authData.employe)
   
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
@@ -98,7 +98,7 @@ const Admin = ({changeUser}) => {
           </div>
           <div className={`${style.tableFailed} ${style.tableDiv}`}>Failed</div>
         </div>
-        {authData.employe.map((val, idx) => {
+        {authData.employe.map((val, idx) => (
            
 
           <WorkTable
@@ -110,7 +110,7 @@ const Admin = ({changeUser}) => {
             completedTaskCount={val.countTask.completedTask}
             failedTaskCount={val.countTask.failed}
           />
-          })}
+          ))}
       </div>
     </>
   );
