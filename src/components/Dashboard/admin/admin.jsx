@@ -77,7 +77,7 @@ const Admin = ({changeUser}) => {
               id="discri"
               rows={8}
               cols={40}
-              placeholder="write discription in 20 words.." value={discription} onChange={(e)=>setDiscription(e.target.value)}
+              placeholder="write discription in 20 words.." value={description} onChange={(e)=>setDiscription(e.target.value)}
             ></textarea>
             <button className={style.createtask} onClick={onHandle}>Create Task</button>
           </div>
