@@ -13,7 +13,7 @@ import { use } from "react";
 
 
 function App() {
-  setLocalStorage();
+  // setLocalStorage();
   // localStorage.clear()
   const {authData} = useContext(AuthContext)
  const [user,setUser] = useState(null);
