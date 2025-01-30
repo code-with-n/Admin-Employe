@@ -2,34 +2,41 @@
 const employees = [
   {
     id: 1,
-    username: "employee1@gmail.com",
+    name: "nitesh",
+    username: "nitesh@gmail.com",
     password: "pass123",
+    countTask: {
+      active: 2,
+      newTask: 5,
+      completedTask: 4,
+      failed: 3,
+    },
     tasks: [
       {
-        active: true,
-        newTask: true,
-        completedTask: false,
-        failed: false,
+        active: 2,
+        newTask: 3,
+        completedTask: 1,
+        failed: 0,
         title: "Fix Bug",
         description: "Resolve bugs today ASAP",
         date: "2025-01-24",
         category: "Bug Fixing",
       },
       {
-        active: false,
-        newTask: false,
+        active: 1,
+        newTask: 2,
         completedTask: true,
-        failed: false,
+        failed: 2,
         title: "Create UI",
         description: "Design the user interface for the new feature",
         date: "2025-01-23",
         category: "UI Design",
       },
       {
-        active: false,
-        newTask: false,
-        completedTask: false,
-        failed: true,
+        active: 4,
+        newTask: 2,
+        completedTask: 4,
+        failed: 5,
         title: "Update Documentation",
         description: "Update the project documentation with recent changes",
         date: "2025-01-22",
@@ -39,34 +46,41 @@ const employees = [
   },
   {
     id: 2,
-    username: "employee2@gmail.com",
+    name: "vishal",
+    username: "vishal@gmail.com",
     password: "pass123",
+    countTask: {
+      active: 3,
+      newTask: 6,
+      completedTask: 2,
+      failed: 1,
+    },
     tasks: [
       {
         active: true,
-        newTask: true,
+        newTask: 5,
         completedTask: false,
-        failed: false,
+        failed: 2,
         title: "Implement Feature",
         description: "Implement the new feature as per the requirements",
         date: "2025-01-24",
         category: "Development",
       },
       {
-        active: false,
+        active: 4,
         newTask: false,
         completedTask: true,
-        failed: false,
+        failed: 4,
         title: "Code Review",
         description: "Review the code submitted by the team",
         date: "2025-01-23",
         category: "Code Review",
       },
       {
-        active: false,
-        newTask: false,
-        completedTask: false,
-        failed: true,
+        active: 4,
+        newTask: 1,
+        completedTask: 4,
+        failed: 5,
         title: "Test Application",
         description: "Perform testing on the application to identify issues",
         date: "2025-01-22",
@@ -76,14 +90,21 @@ const employees = [
   },
   {
     id: 3,
-    username: "employee3@gmail.com",
+    name: "akash",
+    username: "akash@gmail.com",
     password: "pass123",
+    countTask: {
+      active: 4,
+      newTask: 3,
+      completedTask: 5,
+      failed: 2,
+    },
     tasks: [
       {
-        active: true,
-        newTask: true,
-        completedTask: false,
-        failed: false,
+        active: 2,
+        newTask: 5,
+        completedTask: 2,
+        failed: 4,
         title: "Optimize Performance",
         description: "Optimize the application performance",
         date: "2025-01-24",
@@ -91,9 +112,9 @@ const employees = [
       },
       {
         active: false,
-        newTask: false,
+        newTask: 4,
         completedTask: true,
-        failed: false,
+        failed: 4,
         title: "Deploy Application",
         description: "Deploy the application to the production environment",
         date: "2025-01-23",
@@ -101,9 +122,9 @@ const employees = [
       },
       {
         active: false,
-        newTask: false,
+        newTask: 4,
         completedTask: false,
-        failed: true,
+        failed: 5,
         title: "Conduct Meeting",
         description: "Conduct a meeting with the stakeholders",
         date: "2025-01-22",
@@ -113,13 +134,20 @@ const employees = [
   },
   {
     id: 4,
-    username: "employee4@gmail.com",
+    name: "shubham",
+    username: "shubham@gmail.com",
     password: "pass123",
+    countTask: {
+      active: 2,
+      newTask: 4,
+      completedTask: 2,
+      failed: 5,
+    },
     tasks: [
       {
-        active: true,
-        newTask: true,
-        completedTask: false,
+        active: 5,
+        newTask: 1,
+        completedTask: 4,
         failed: false,
         title: "Fix Bug",
         description: "Resolve bugs today ASAP",
@@ -128,8 +156,8 @@ const employees = [
       },
       {
         active: false,
-        newTask: false,
-        completedTask: true,
+        newTask: 4,
+        completedTask: 1,
         failed: false,
         title: "Create UI",
         description: "Design the user interface for the new feature",
@@ -138,9 +166,9 @@ const employees = [
       },
       {
         active: false,
-        newTask: false,
+        newTask: 4,
         completedTask: false,
-        failed: true,
+        failed: 1,
         title: "Update Documentation",
         description: "Update the project documentation with recent changes",
         date: "2025-01-22",
@@ -150,34 +178,41 @@ const employees = [
   },
   {
     id: 5,
-    username: "employee5@gmail.com",
+    name: "aryan",
+    username: "aryan@gmail.com",
     password: "pass123",
+    countTask: {
+      active: 5,
+      newTask: 2,
+      completedTask: 3,
+      failed: 1,
+    },
     tasks: [
       {
-        active: true,
-        newTask: true,
-        completedTask: false,
-        failed: false,
+        active: 1,
+        newTask: 4,
+        completedTask: 3,
+        failed: 2,
         title: "Implement Feature",
         description: "Implement the new feature as per the requirements",
         date: "2025-01-24",
         category: "Development",
       },
       {
-        active: false,
-        newTask: false,
-        completedTask: true,
-        failed: false,
+        active: 4,
+        newTask: 2,
+        completedTask: 1,
+        failed: 2,
         title: "Code Review",
         description: "Review the code submitted by the team",
         date: "2025-01-23",
         category: "Code Review",
       },
       {
-        active: false,
-        newTask: false,
-        completedTask: false,
-        failed: true,
+        active: 2,
+        newTask: 3,
+        completedTask: 2,
+        failed: 1,
         title: "Test Application",
         description: "Perform testing on the application to identify issues",
         date: "2025-01-22",
@@ -187,22 +222,21 @@ const employees = [
   },
 ];
 
-const admin = [
-  {
-    id: 1,
-    username: "admin",
-    password: "pass123",
-  },
-];
+const admin = {
+  id: 1,
+  name: "nitesh",
+  username: "admin",
+  password: "pass123",
+};
 
-export const setLocalStorage=()=>{
-    localStorage.setItem('employes',JSON.stringify(employees))
-    localStorage.setItem('admin',JSON.stringify(admin))
-}
-export const getLocalStorage=()=>{
-    const employe = JSON.parse(localStorage.getItem('employes'))
-    const admin = JSON.parse(localStorage.getItem('admin'))
-    
-   return {employe,admin};
+export const setLocalStorage = () => {
+  localStorage.setItem("employes", JSON.stringify(employees));
+  localStorage.setItem("admin", JSON.stringify(admin));
+};
+export const getLocalStorage = () => {
+  const employe = JSON.parse(localStorage.getItem("employes"));
+  console.log(employe);
+  const admin = JSON.parse(localStorage.getItem("admin"));
 
-}
+  return { employe, admin };
+};

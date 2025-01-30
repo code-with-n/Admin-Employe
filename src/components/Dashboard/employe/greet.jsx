@@ -1,24 +1,27 @@
 import { useState } from "react";
 import style from "./employe.module.css";
-const Greet = () => {
-  // const [username,setname] = useState("");
-  // if (!data) {
-  //   setname("not arrived")
-  // }else{
-  //   setname(data.username)
-  // }
-  const onLogOut =()=>{
-    localStorage.setItem("loggedInUser",'')
-    window.location.reload()
-  }
+
+const Greet = ({  changeUser }) => {
+  const empName = JSON.parse(localStorage.getItem("loggedInUser"));
+  
+
+  const onLogOut = () => {
+    localStorage.setItem("loggedInUser", "");
+
+    changeUser("");
+  };
+
   return (
     <>
       <div className={style.greetlogo}>
         {/* contain user name */}
         <div className={style.greet}>
           Hy <br />
+          {empName.data.name }
         </div>
-        <button className={style.logOutBtn} onClick={onLogOut}>Log Out</button>
+        <button className={style.logOutBtn} onClick={onLogOut}>
+          Log Out
+        </button>
       </div>
     </>
   );

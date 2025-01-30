@@ -174,10 +174,11 @@
   opacity: 0.90;
   position: relative;
   left: 10px;
+  height: 30%;
+  /* border: 1px solid blueviolet; */
 }
 .markFailed{
  margin-top: 10px;
-  
   width: 100%;
   display: flex;
   justify-content: space-around;

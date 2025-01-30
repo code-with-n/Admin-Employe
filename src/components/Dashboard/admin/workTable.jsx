@@ -1,23 +1,27 @@
 
+import { useState } from "react";
 import style from "./admin.module.css"
-const WorkTable = () => {
+
+const WorkTable = ({data,newTaskCount,activeTaskCount,completedTaskCount,failedTaskCount}) => {
+ 
+
   return (
     <>
       <div className={style.worktable}>
         <div className={`${style.EmplyName} ${style.wrktableDiv}`}>
-          Nitesh
+         {data.name}
         </div>
         <div className={`${style.countNewTask} ${style.wrktableDiv}`}>
-          1
+          {newTaskCount}
         </div>
         <div className={`${style.countActiveTask} ${style.wrktableDiv}`}>
-          2
+          {activeTaskCount}
         </div>
         <div className={`${style.countCompleted} ${style.wrktableDiv}`}>
-         3
+         {completedTaskCount}
         </div>
         <div className={`${style.countFailed} ${style.wrktableDiv}`}>
-            4
+            {failedTaskCount}
         </div>
       </div>
     </>

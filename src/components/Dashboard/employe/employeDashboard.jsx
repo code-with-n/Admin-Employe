@@ -5,12 +5,13 @@ import NewTask from "../../tasklist/newTask";
 import style from "./employe.module.css";
 import Greet from "./greet";
 import TaskDetail from "./taskdetail";
-const EmployeDash = ({data}) => {
+const EmployeDash = ({changeUser}) => {
+  // console.log(data)
   return (
     <>
       <div className={style.dashContainer}>
         <div className={style.dash}>
-          <Greet data={data}/>
+          <Greet changeUser={changeUser}/>
 
           {/* here will be appear task list  */}
           <div className={style.taskMenu}>

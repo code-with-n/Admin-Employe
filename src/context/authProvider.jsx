@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 console.log("nitesh")
 
 const AuthProvider = ({ children }) => {
-  setLocalStorage()
+  // setLocalStorage()
     const [authData ,setAuthdata ] = useState();
     
     useEffect(()=>{
@@ -14,13 +14,13 @@ const AuthProvider = ({ children }) => {
         setAuthdata({employe,admin})
     },[])
 
-    const LogOut = ()=>{
-        
-    }
+   const logOut=()=>{
+
+   }
 
   return (
     <>
-      <AuthContext.Provider value={{authData,LogOut}}>
+      <AuthContext.Provider value={{authData,logOut}}>
         {children}
         </AuthContext.Provider>
     </>
