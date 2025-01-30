@@ -13,7 +13,7 @@ const Admin = ({changeUser}) => {
   const [date, setDate] = useState("");
   const [assign , setAssign] = useState("");
   const [category , setCategory] = useState("");
-  const [discription , setDiscription] = useState("");
+  const [description , setDiscription] = useState("");
   // const [newTask ,setNewTask] = useState({})
   
   const onHandle =()=>{
@@ -21,7 +21,7 @@ const Admin = ({changeUser}) => {
     const employes  = JSON.parse(localStorage.getItem('employes'))
     let val = true;
     // setNewTask()
-    let task = {title,date,assign,category,discription}
+    let task = {title,date,assign,category,description}
     let  getData = employes.map((data)=>{
       if (assign == data.name) {
         return {...data, tasks:[...data.tasks , task]}
