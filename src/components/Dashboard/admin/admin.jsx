@@ -98,8 +98,8 @@ const Admin = ({changeUser}) => {
           </div>
           <div className={`${style.tableFailed} ${style.tableDiv}`}>Failed</div>
         </div>
-        {authData.employe.map((val, idx) => (
-          //  console.log(val)
+        {authData.employe.map((val, idx) => {
+           
 
           <WorkTable
             data={val}
@@ -110,7 +110,7 @@ const Admin = ({changeUser}) => {
             completedTaskCount={val.countTask.completedTask}
             failedTaskCount={val.countTask.failed}
           />
-        ))}
+          })}
       </div>
     </>
   );
